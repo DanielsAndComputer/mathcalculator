@@ -1,0 +1,117 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+ text-transform: uppercase;
+ font-size: 1.5rem;
+ font-weight: bolder;
+ font-family: cursive;
+
+}
+.content {
+ width: 100%;
+padding: 1rem;
+}
+header p {
+ position: absolute;
+ top: 1rem;
+ right: 1rem;
+
+}
+header {
+ position: relative;
+ padding: 1rem;
+}
+ header a {
+  color: whitesmoke;
+  background-color: #333;
+  padding: .2rem .5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: monospace;
+  transition: .2s all ease-in-out ;
+ }
+ header a:hover {
+  background-color: #333333cc;
+ }
+
+ span {
+  color: #969090;
+ }
+
+
+ .numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 1rem 2rem;
+  gap: .5rem;
+
+ }
+ .numbers p, .reset {
+  background-color: #333;
+  color: wheat;
+  height: 3rem;
+  min-width: 4rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+
+ /* reset button */
+ .reset {
+  width: 6rem;
+  height: 2.3rem;
+  background-color: #1b1616;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: cursive;
+  color: whitesmoke;
+
+
+
+ }
+ .numbers p:hover, .reset:hover { 
+  background-color: #333333dc;
+ }
+
+ .preview-ques,
+ .answer {
+  background-color: #969090;
+  color: whitesmoke;
+  display: inline-block;
+  padding: .5rem;
+  min-width: 10rem;
+  text-align: center;
+  margin: .5rem 1.5rem;
+ }
+
+ h2,
+ h3 {
+  font-family: cursive;
+  text-transform: capitalize;
+  margin: .5rem;
+ }
+.workings {
+ display: none;
+}
+ .workings.show {
+  display: block;
+  width: 80%;
+  line-height: 1.4rem;
+  color: #333;
+  background-color: antiquewhite;
+  text-transform: lowercase;
+  font-family: monospace;
+  font-size: large;
+  margin: .5rem 2rem;
+  padding: 1rem;
+ }
